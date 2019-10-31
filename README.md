@@ -20,7 +20,7 @@ Vulnerability #1:  SQL Injection in (https://35.184.88.14/blue/public/salesperso
 <img src='sqli.gif'>
 
 Vulnerability #2:  Session Fixation using CSRF
-
+<img src='session.gif'>
 
 ## Green
 
