@@ -42,7 +42,7 @@ Vulnerability #1: Cross-Site Scripting (XSS) (Feedback form)
 The feedback in the green website allows you to perform stored xss. We can redirect the admin to a form which submits a form on attackers website to tell them if the store xss was successful.
 xss can't read or write cookies because the cookies are HTTP only.
 xss can be used to redirect user to a new webpage in green website. by just using window.location.href
-this also allows us to do session fixation by just redirecting the admin to the attackers website which performs the csrf request to change the session id. Session hijacking will be difficult because javascript doesn't have cookie access.
+this also allows us to do session fixation by just redirecting the admin to the attackers website which performs the csrf request to change the session id. Session hijacking will be difficult because javascript doesn't have cookie access. It can make the admin perform an asynchronous request to the hack tool and then read the data from there and send it to attacker.
 
 <img src='xss.gif'>
 
