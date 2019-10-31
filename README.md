@@ -32,7 +32,7 @@ https://35.184.88.145/blue/public/salesperson.php?id=-2%27%20UNION%20SELECT%201,
 Vulnerability #2:  Session Fixation using CSRF
 I created a html form in an iframe which submits on load and the redirects the visitor to blue website
 the form fixes the attackers session id.
-now when the visitor logs in in the staff section on blue website attacker will also gain access to the staff section because the blue website doesn't regenerate session id's on login
+now when the visitor logs in in the staff section on blue website attacker will also gain access to the staff section because the blue website doesn't regenerate session id's on login.
 
 <img src='session.gif'>
 
@@ -41,7 +41,8 @@ now when the visitor logs in in the staff section on blue website attacker will 
 Vulnerability #1: Cross-Site Scripting (XSS) (Feedback form)
 The feedback in the green website allows you to perform stored xss. We can redirect the admin to a form which submits a form on attackers website to tell them if the store xss was successful.
 xss can't read or write cookies because the cookies are HTTP only.
-xss can be used to redirect user to a new webpage in green website.
+xss can be used to redirect user to a new webpage in green website. by just using window.location.href
+this also allows us to do session fixation by just redirecting the admin to the attackers website which performs the csrf request to change the session id. Session hijacking will be difficult because javascript doesn't have cookie access.
 
 <img src='xss.gif'>
 
