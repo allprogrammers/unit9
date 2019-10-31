@@ -40,6 +40,8 @@ now when the visitor logs in in the staff section on blue website attacker will 
 
 Vulnerability #1: Cross-Site Scripting (XSS) (Feedback form)
 The feedback in the green website allows you to perform stored xss. We can redirect the admin to a form which submits a form on attackers website to tell them if the store xss was successful.
+xss can't read or write cookies because the cookies are HTTP only.
+xss can be used to redirect user to a new webpage in green website.
 
 <img src='xss.gif'>
 
